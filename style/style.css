@@ -94,7 +94,7 @@ header.sticky #nav .home {
 .banner {
     width: 100%;
     height: 100vh;
-    background: url(https://github.com/Marcone-Santos1/ReginaldoMarcenaria/blob/main/img/kitchen-g67a2d6cfc_1280.jpg?raw=true);
+    background: url(../img/kitchen-g67a2d6cfc_1280.jpg);
     background-size: cover;
     margin-bottom: 10px;
 }
