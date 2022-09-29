@@ -92,18 +92,39 @@
             <section class="sectionForm">
                 <h3>Orçamento</h3>
                 <div class="form">
-                    <form action="" class="orcamentoForm" id="form">
-                        <input type="text" id="nome" placeholder="Nome" class="box" required>
-                        <input type="tel" id="telefone" placeholder="Telefone" class="box" required>
-                        <input type="email" id="email" placeholder="Email" class="box email">
-                        <textarea name="" id="textarea" class="box" cols="30" rows="10"></textarea>
+                    <form action="formContato.php" class="orcamentoForm" id="form" method="POST">
+                        <input type="text" id="nome" placeholder="Nome" class="box" name="nome" required>
+                        <input type="tel" id="telefone" placeholder="Telefone" class="box" name="telefone" required>
+                        <input type="email" id="email" placeholder="Email" class="box email" name="email">
+                        <textarea id="textarea" class="box" cols="30" rows="10" name="descricao"></textarea>
 
-                        <button id="button" onclick="mostrar()" >Enviar</button>
+                        <button id="button" type="submit">Enviar</button>
                     </form>
 
                 </div>
             </section>
         </div>
+
+        <?php
+
+            require_once(__DIR__ . "./config.php");
+
+            $bd = new Banco();
+
+            $sql = "SELECT * FROM tb_contato";
+
+            $bd->query($sql);
+
+            $action = '';
+            if (!empty($_GET['action'])) {
+                $action = $_GET['action'];
+            }
+            
+            if ($action == "formContato.php") {
+                require_once("./formContato.php");
+            }
+
+        ?>
 
         <!-- contatos -->
 
