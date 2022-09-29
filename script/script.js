@@ -17,18 +17,18 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 
 /* pegar dados do form */
 
-var form = document.querySelector("#form");
-var nome = document.querySelector("#nome");
-var tel = document.querySelector("#telefone");
-var email = document.querySelector("#email");
+// var form = document.querySelector("#form");
+// var nome = document.querySelector("#nome");
+// var tel = document.querySelector("#telefone");
+// var email = document.querySelector("#email");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-})
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+// })
 
-function mostrar(){
-  alert(nome.value)
-  alert(tel.value)
-  alert(email.value)
-}
+// function mostrar(){
+//   alert(nome.value)
+//   alert(tel.value)
+//   alert(email.value)
+// }
 
