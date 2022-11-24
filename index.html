@@ -104,28 +104,6 @@
                 </div>
             </section>
         </div>
-
-        <?php
-
-            require_once(__DIR__ . "./config.php");
-
-            $bd = new Banco();
-
-            $sql = "SELECT * FROM tb_contato";
-
-            $bd->query($sql);
-
-            $action = '';
-            if (!empty($_GET['action'])) {
-                $action = $_GET['action'];
-            }
-            
-            if ($action == "formContato.php") {
-                require_once("./formContato.php");
-            }
-
-        ?>
-
         <!-- contatos -->
 
         <section class="contacts" id="contatos">
