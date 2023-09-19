@@ -4,8 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>RGM Marcenaria</title>
     </head>
     <body>
@@ -55,29 +58,36 @@
     
                 <div class="box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
-                    <img src="https://lojazeus.com/wp-content/uploads/2022/01/WhatsApp-Image-2021-01-22-at-08.18.21-Copia-400x400.jpeg" alt="">
+                    <img src="img/comoda.jpeg" alt="">
                 </div>
                 <div class="box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
-                    <img src="https://lojazeus.com/wp-content/uploads/2022/01/WhatsApp-Image-2021-01-22-at-08.18.21-Copia-400x400.jpeg" alt="">
+                    <img src="img/cozinhaBranco.jpeg" alt="">
                 </div>
                 <div class="box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
-                    <img src="https://lojazeus.com/wp-content/uploads/2022/01/WhatsApp-Image-2021-01-22-at-08.18.21-Copia-400x400.jpeg" alt="">
+                    <img src="img/gabinete.jpeg" alt="">
                 </div>
                 <div class="box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
-                    <img src="https://lojazeus.com/wp-content/uploads/2022/01/WhatsApp-Image-2021-01-22-at-08.18.21-Copia-400x400.jpeg" alt="">
+                    <img src="img/guardaRoupaBrancoParede.jpeg" alt="">
                 </div>
                 <div class="box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
-                    <img src="https://lojazeus.com/wp-content/uploads/2022/01/WhatsApp-Image-2021-01-22-at-08.18.21-Copia-400x400.jpeg" alt="">
+                    <img src="img/guardaRoupa.jpeg" alt="">
                 </div>
                 <div class="box">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
-                    <img src="https://lojazeus.com/wp-content/uploads/2022/01/WhatsApp-Image-2021-01-22-at-08.18.21-Copia-400x400.jpeg" alt="">
+                    <img src="img/guardaRoupa2.jpeg" alt="">
                 </div>
-                
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <img src="img/guardaRoupaBranco.jpeg" alt="">
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <img src="img/guardaRoupaBrancoParedeComoda.jpeg" alt="">
+                </div>
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur hic quia laudantium autem aspernatur error suscipit consequuntur aliquam rem sunt recusandae similique voluptas quo, est commodi. Repellendus, ducimus iste!</p>
            
@@ -91,14 +101,17 @@
         <div class="marginTop" id="orcamentos">
             <section class="sectionForm">
                 <h3>Orçamento</h3>
+
+                <p id="successMessage" class="successMessage">Email enviado com sucesso!</p>
+
                 <div class="form">
-                    <form action="formContato.php" class="orcamentoForm" id="form" method="POST">
+                    <form class="orcamentoForm" id="form" method="POST">
                         <input type="text" id="nome" placeholder="Nome" class="box" name="nome" required>
                         <input type="tel" id="telefone" placeholder="Telefone" class="box" name="telefone" required>
-                        <input type="email" id="email" placeholder="Email" class="box email" name="email">
-                        <textarea id="textarea" class="box" cols="30" rows="10" name="descricao"></textarea>
+                        <input type="email" id="email" placeholder="Email" class="box email" name="email" required>
+                        <textarea id="description" class="box" cols="30" rows="10" name="descricao" required></textarea>
 
-                        <button id="button" type="submit">Enviar</button>
+                        <button id="formButton" type="submit">Enviar</button>
                     </form>
 
                 </div>
@@ -169,9 +182,8 @@
             </div>
         </div>
     
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./script/script.js"></script>
+        <script src="./script/script.js"></script>    
 
     </body>
 </html>

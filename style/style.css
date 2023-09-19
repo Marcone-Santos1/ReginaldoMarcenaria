@@ -578,3 +578,12 @@ img {
     }
 
 }
+
+/* success message */
+
+.successMessage {
+    display: none;
+    font-weight: 500;
+    color: lawngreen;
+    margin: 15px 0px 15px 0px;
+}
