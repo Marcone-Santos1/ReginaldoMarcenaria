@@ -13,7 +13,7 @@
     </head>
     <body>
         <header>
-            <a href="index.html" class="logo">RGM</a>
+            <a href="index.html" class="logo">RGM Marcenaria</a>
             <nav id="nav">
                 <a href="#home" class="home">home</a>
                 <button id="btn-mobile">
@@ -31,8 +31,9 @@
         <!-- section banner -->
         <section class="banner" id="home">
             <div class="centered">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, natus in. Sint perspiciatis facere nesciunt, molestiae explicabo quod corporis possimus maxime voluptates quae dolore delectus architecto repudiandae saepe eaque deserunt?
-
+                <h1>RGM Marcenaria</h1>
+                <h2>Especialista em Móveis Planejados!</h2>
+                <a class="orcamentoBtn" href="#orcamentos">Orçamento</a>
             </div>
         </section>
 
@@ -43,8 +44,8 @@
 
             <div class="divImg">            
                 <h1>RGM Marcenaria</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores aliquam, itaque, amet debitis odit qui neque atque dicta nulla nisi dignissimos iusto sit et expedita doloribus tempore labore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quidem temporibus cumque explicabo ut repudiandae ducimus necessitatibus saepe. Quos eveniet aliquid nobis numquam, in impedit beatae labore aspernatur eum itaque!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque maiores aliquam, itaque, amet debitis odit qui neque atque dicta nulla nisi dignissimos iusto sit et expedita doloribus tempore labore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quidem temporibus cumque explicabo ut repudiandae ducimus necessitatibus saepe. Quos eveniet aliquid nobis numquam, in impedit beatae labore aspernatur eum itaque!</p>
+                <p>Bem-vindo à RGM Marcenaria, sua parceira especializada em móveis planejados! Somos uma empresa dedicada a transformar ambientes por meio da criação de móveis sob medida, cuidadosamente projetados para atender às necessidades específicas de nossos clientes.</p>
+                <p>Com uma equipe apaixonada por marcenaria e um compromisso inabalável com a qualidade, cada peça que produzimos é uma fusão de habilidade artesanal e design inovador. Na RGM Marcenaria, acreditamos que os móveis não são apenas utilitários, mas também expressões de estilo e personalidade.</p>
             </div>
         </section>
 
@@ -52,45 +53,43 @@
 
         <section class="projetos" id="projetos">
 
-            <h3 class="heading">Nossos <span>projetos</span></h3>
+            <h2 class="heading">Nossos <span>projetos</span></h2>
             
             <div class="box-container">
     
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Cômoda 14 Gavetas</h3>
                     <img src="img/comoda.jpeg" alt="">
                 </div>
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Cozinha</h3>
                     <img src="img/cozinhaBranco.jpeg" alt="">
                 </div>
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Gabinete</h3>
                     <img src="img/gabinete.jpeg" alt="">
                 </div>
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Guarda-Roupa embutido</h3>
                     <img src="img/guardaRoupaBrancoParede.jpeg" alt="">
                 </div>
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Guarda-Roupa embutido</h3>
                     <img src="img/guardaRoupa.jpeg" alt="">
                 </div>
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Guarda-Roupa</h3>
                     <img src="img/guardaRoupa2.jpeg" alt="">
                 </div>
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Guarda-Roupa embutido</h3>
                     <img src="img/guardaRoupaBranco.jpeg" alt="">
                 </div>
                 <div class="box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In temporibus moles</p>
+                    <h3>Guarda-Roupa embutido e Cômoda</h3>
                     <img src="img/guardaRoupaBrancoParedeComoda.jpeg" alt="">
                 </div>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum! lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur hic quia laudantium autem aspernatur error suscipit consequuntur aliquam rem sunt recusandae similique voluptas quo, est commodi. Repellendus, ducimus iste!</p>
-           
             </div>
 
         </section>  
@@ -100,15 +99,22 @@
 
         <div class="marginTop" id="orcamentos">
             <section class="sectionForm">
-                <h3>Orçamento</h3>
+                <h2>Orçamento</h2>
 
                 <p id="successMessage" class="successMessage">Email enviado com sucesso!</p>
 
                 <div class="form">
                     <form class="orcamentoForm" id="form" method="POST">
+                        <label for="nome">Nome</label>
                         <input type="text" id="nome" placeholder="Nome" class="box" name="nome" required>
+
+                        <label for="telefone">Telefone</label>
                         <input type="tel" id="telefone" placeholder="Telefone" class="box" name="telefone" required>
+
+                        <label for="email">E-mail</label>
                         <input type="email" id="email" placeholder="Email" class="box email" name="email" required>
+
+                        <label for="description">Descrição</label>
                         <textarea id="description" class="box" cols="30" rows="10" name="descricao" required></textarea>
 
                         <button id="formButton" type="submit">Enviar</button>
@@ -121,16 +127,20 @@
 
         <section class="contacts" id="contatos">
             <div class="h3">
-                <h3>Contatos</h3>
+                <h2>Contatos</h2>
                 <div class="divSocial">
                     <div class="textContact">
                         <div class="contact">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, ipsa quidem nesciunt.</p>
+                            <p>(11) 95024-9407</p>
                         </div>
                         <div class="contact">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatibus, ipsa quidem nesciunt.</p>
+                            <p>
+                                <a style="color: #FFF" aria-label="Whatsapp" href="https://wa.me/5511950249407?text=Olá,%20Eu%20tenho%20interesse%20nos%20seus%20serviços%20oferecidos" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                            </p>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sequi, mollitia perspiciatis nihil magni nulla ipsum numquam dolorem dolore quaerat, deserunt officiis voluptate cumque consequatur? Voluptatum veniam vel debitis facere!</p>
+                        <p>
+                            <a style="color: #FFF" href="https://www.instagram.com/_rgm_marcenaria/" target="_blank" rel="noopener noreferrer">@_rgm_marcenaria</a>
+                        </p>
                     </div>
                 </div>
 
@@ -156,9 +166,7 @@
             </div>
             <div class="boxRodape">
                 <h2>Sobre nós</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et distinctio perspiciatis dolores officia illum doloribus ex ducimus alias error rerum consequatur voluptatem, facilis debitis illo, dolorem labore harum, maiores magni?
-                </p>
+                <p>Bem-vindo à RGM Marcenaria, sua parceira especializada em móveis planejados! Somos uma empresa dedicada a transformar ambientes por meio da criação de móveis sob medida, cuidadosamente projetados para atender às necessidades específicas de nossos clientes.</p>
             </div>
 
         </footer>
@@ -167,17 +175,17 @@
             <h2 id="logo">RGM Marcenaria</h2>
             <div class="sociais">
                 <div class="social">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/_rgm_marcenaria/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="social">
-                    <a href="https://wa.me/5511950249407?text=Olá,%20Eu%20tenho%20interesse%20nos%20seus%20serviços%20oferecidos" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a aria-label="Whatsapp" href="https://wa.me/5511950249407?text=Olá,%20Eu%20tenho%20interesse%20nos%20seus%20serviços%20oferecidos" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
         <div id="div-direitos">
             <div id="direitos">
-                <p>© 2022 RGM - Marcenaria. Todos os direitos reservados.
-                    <p>Desenvolvido por <a href="https://github.com/Marcone-Santos1" target="_blank" rel="noopener noreferrer">Marcone Santos</a></p>
+                <p>
+                    © 2022 RGM - Marcenaria. Todos os direitos reservados.
                 </p>
             </div>
         </div>
