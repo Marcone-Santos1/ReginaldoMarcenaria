@@ -25,7 +25,7 @@ let description = document.querySelector("#description");
 let button = document.getElementById("formButton");
 
 const sendMail = async (messageContent) => {
-  const request = await fetch('http://127.0.0.1:8000/send-mail', {
+  const request = await fetch('https://mail-send-two.vercel.app/send-mail', {
     method: 'POST',
     headers: {
       "Content-type": "application/json"
