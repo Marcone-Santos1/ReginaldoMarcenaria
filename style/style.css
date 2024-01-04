@@ -302,6 +302,9 @@ img {
     background: #000000;
     display: flex;
     width: 100%;
+
+    justify-content: center;
+    align-items: center;
 }
 
 #rodape .boxRodape {
