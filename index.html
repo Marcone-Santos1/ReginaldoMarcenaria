@@ -39,7 +39,11 @@
           content="RGM Marcenaria: Sua fonte confiável para móveis planejados personalizados. Criamos ambientes únicos com qualidade artesanal. Explore nossos projetos e solicite seu orçamento hoje!">
     <meta name="google-site-verification" content="QbMyMB8vfFhaplTPDKJZqUx6QWpG7J5iuH3xaz_9ftg"/>
 
-    <link rel="stylesheet" href="style/style.css">
+<!--    <link rel="stylesheet" href="style/style.css">-->
+
+    <link rel="preload" href="style/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style/style.min.css"></noscript>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -57,7 +61,7 @@
 </noscript>
 
 <header>
-    <a href="index.html" class="logo">RGM Marcenaria</a>
+    <a href="/" class="logo">RGM Marcenaria</a>
     <nav id="nav">
         <a href="#home" class="home">home</a>
         <button id="btn-mobile" aria-label="mobile button">
@@ -247,7 +251,8 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="./script/script.js"></script>
+<!--<script src="./script/script.js"></script>-->
+<script src="./script/script.min.js"></script>
 
 </body>
 </html>
