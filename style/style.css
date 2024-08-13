@@ -83,7 +83,7 @@ header #menu li a {
     font-weight: 500px;
 }
 
-header.sticky #menu li a, 
+header.sticky #menu li a,
 header.sticky .logo,
 header.sticky #nav .home {
     color: black;
@@ -95,7 +95,7 @@ header.sticky #nav .home {
     max-width: 100%;
     width: 100%;
     height: 100vh;
-    background: url(../img/kitchen-g67a2d6cfc_1280.jpg);
+    background: url(../img/kitchen-g67a2d6cfc_1280.webp);
     background-size: cover;
     margin-bottom: 10px;
 }
@@ -167,7 +167,7 @@ img {
     margin: 20px;
     margin-bottom: 10px;
     text-align: center;
-} 
+}
 
 .divImg p {
     margin-bottom: 10px;
@@ -236,12 +236,12 @@ img {
 
 .sectionForm {
     padding-top: 3rem;
-    padding-bottom: 3rem;   
+    padding-bottom: 3rem;
     max-width: 1200px;
     background: #101113;
     display: flex;
     margin: 0 auto;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     flex-direction: column;
     min-height: 50vh;
     justify-content: center;
@@ -316,7 +316,7 @@ img {
 
 #rodape .boxRodape:nth-child(3){
     width: 400px;
-} 
+}
 
 .boxRodape h2 {
     color: #fef8f2;
@@ -393,7 +393,7 @@ img {
 }
 
 #div-direitos #direitos{
-    display: flex; 
+    display: flex;
     align-items: center;
     height: 30px;
     margin: 0 auto;
@@ -513,7 +513,7 @@ img {
     #nav.active #menu{
         display: flex;
         position: absolute;
-        height: 100vh; 
+        height: 100vh;
         visibility: visible;
         overflow-x: auto;
     }
@@ -526,7 +526,7 @@ img {
         border-bottom: 1px solid white;
 
     }
- 
+
     #btn-mobile {
         display: flex;
         padding: .5rem;
@@ -559,7 +559,7 @@ img {
     #nav.active #hamburger {
         border-top-color: transparent;
     }
-    
+
     #nav.active #hamburger::before {
         transform: rotate(135deg);
     }
@@ -572,7 +572,7 @@ img {
     .box-container .box {
         margin: 5px;
     }
-    
+
     #rodape {
         flex-direction: column;
     }
