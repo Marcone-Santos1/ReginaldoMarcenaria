@@ -95,7 +95,7 @@ header.sticky #nav .home {
     max-width: 100%;
     width: 100%;
     height: 100vh;
-    background: url(../img/kitchen-g67a2d6cfc_1280.webp);
+    background: url(../img/bg_.webp);
     background-size: cover;
     margin-bottom: 10px;
 }
@@ -113,6 +113,7 @@ header.sticky #nav .home {
 
 .centered  {
     color: #faf4f4;
+    text-align: center;
 }
 
 .centered h1 {
@@ -376,10 +377,9 @@ img {
 }
 
 .sociais .social img {
-    width: 20px;
+    width: 100%;
     margin-top: 5px;
     transition: background .2s;
-    background: rgba(255, 255, 255, 0.645);
     border-radius: 3px;
 }
 
