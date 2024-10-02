@@ -24,6 +24,10 @@ let email = document.querySelector("#email");
 let description = document.querySelector("#description");
 let button = document.getElementById("formButton");
 
+let spinner = button.querySelector(".spinner");
+let reveals = document.querySelectorAll(".reveal");
+
+
 const sendMail = async (messageContent) => {
   const request = await fetch('https://mail-send-two.vercel.app/send-mail', {
     method: 'POST',
@@ -33,12 +37,29 @@ const sendMail = async (messageContent) => {
     body: JSON.stringify(messageContent),
   })
 
-  console.log(request)
-
-  const response = await request.json()
-
-  console.log(response)
+  return await request.json()
 }
+
+tel.addEventListener("input", function(e) {
+  let value = e.target.value.replace(/\D/g, ""); // Remove tudo que não é dígito
+
+  let key = e.inputType;
+
+  // Ignora o backspace ao aplicar a máscara
+  if (key === "deleteContentBackward") {
+    return;
+  }
+
+  if (value.length > 10) {
+    // Máscara para celular (XX) XXXXX-XXXX
+    value = value.replace(/^(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+  } else {
+    // Máscara para fixo (XX) XXXX-XXXX
+    value = value.replace(/^(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
+  }
+
+  e.target.value = value;
+});
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -60,7 +81,6 @@ const loadingButton = async (button, active = false) => {
   await showSuccessMessage(active);
 
   if (active) {
-    button.innerHTML = '<i class="fa fa-spinner fa-spin"></i>'
     button.setAttribute('disabled', 'disabled')
     return
   }
@@ -80,7 +100,6 @@ const showSuccessMessage = async (active = false) => {
   const successMessage = document.getElementById("successMessage")
 
   if (active) {
-    console.log('teste')
     successMessage.style.display = "block"
     return
   }
@@ -88,8 +107,7 @@ const showSuccessMessage = async (active = false) => {
 
 }
 
-function reveal() {
-  let reveals = document.querySelectorAll(".reveal");
+const reveal = () => {
 
   for (let i = 0; i < reveals.length; i++) {
     let windowHeight = window.innerHeight;
