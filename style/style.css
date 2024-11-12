@@ -313,13 +313,11 @@ img {
     min-height: 150px;
     height: 100%;
     padding: 20px;
+
+    text-align: center;
 }
 
-#rodape .boxRodape:nth-child(3){
-    width: 400px;
-}
-
-.boxRodape h2 {
+.boxRodape h2, .boxRodape address {
     color: #fef8f2;
     margin-bottom: 20px;
 }
@@ -328,7 +326,7 @@ img {
     margin: 10px 0px;
 }
 
-.boxRodape ul li a {
+.boxRodape ul li a, .boxRodape a {
     color: #faf4f4;
     font-size: 15px;
 }
