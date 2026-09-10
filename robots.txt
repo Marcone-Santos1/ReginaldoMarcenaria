@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://marcenariargm.com.br/sitemap.xml
